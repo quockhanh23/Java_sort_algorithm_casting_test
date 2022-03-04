@@ -8,6 +8,7 @@ public class Main {
         }
         Arrays.sort(arr);
         int r = bubbleSort(arr);
+        System.out.println(r);
     }
 
     public static int bubbleSort(int[] array) {

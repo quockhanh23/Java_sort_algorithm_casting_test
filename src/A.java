@@ -30,4 +30,13 @@ public class A {
     public final String farther2(String name) {
         return "alo123";
     }
+
+    public void farther3() {
+        System.out.println("alo123");
+    }
+
+    public static void main(String[] args) {
+        A a = new A();
+        System.out.println(a.nameFather);
+    }
 }

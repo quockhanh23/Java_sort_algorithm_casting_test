@@ -44,8 +44,14 @@ public class B extends A {
     public void setAddress(String address) {
         this.address = address;
     }
+
     public String children() {
         return "children class";
+    }
+
+    @Override
+    public void farther3() {
+        System.out.println("aloFather");
     }
 
     @Override
@@ -70,5 +76,11 @@ public class B extends A {
         // Lấy đối tượng của cha ép lên con thì mới dùng được phương thức của lớp con
         B koo = (B) kaka;
         System.out.println(koo.children());
+        kaka.farther3();
+
+        B b = new B();
+        b.farther3();
+
+
     }
 }
