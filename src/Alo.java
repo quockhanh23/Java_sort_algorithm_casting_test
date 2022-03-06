@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Alo {
-
+    // Tìm phần tử lớn thứ 2
     // cách 1
     public static void print1largest(int arr[], int arr_size) {
         int first, second;
@@ -31,17 +31,21 @@ public class Alo {
             System.out.print("Mảng chỉ có 1 phần tử");
         } else if (arr_size > 2) {
             Arrays.sort(arr);
-            for (int i = arr_size - 2; i > Integer.MIN_VALUE; i--) {
-                if (arr[i] != arr[arr_size - 1]) {
-                    System.out.printf("Phần tử lớn thứ 2: " + arr[i]);
-                    break;
+            try {
+                for (int i = arr_size - 2; i > Integer.MIN_VALUE; i--) {
+                    if (arr[i] != arr[arr_size - 1]) {
+                        System.out.printf("Phần tử lớn thứ 2: " + arr[i]);
+                        break;
+                    }
                 }
+            } catch (Exception e) {
+                System.out.println("các phần tử của mảng đều giống nhau");
             }
         }
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 1};
+        int arr[] = {2, 2, 2, 2, 2};
         int n = arr.length;
         print2largest(arr, n);
 
