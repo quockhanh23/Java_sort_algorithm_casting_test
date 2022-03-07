@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Alo {
     // Tìm phần tử lớn thứ 2
@@ -32,14 +34,14 @@ public class Alo {
         } else if (arr_size > 2) {
             Arrays.sort(arr);
             try {
-                for (int i = arr_size - 2; i > Integer.MIN_VALUE; i--) {
+                for (int i = arr_size - 2; i < arr_size; i--) {
                     if (arr[i] != arr[arr_size - 1]) {
                         System.out.printf("Phần tử lớn thứ 2: " + arr[i]);
                         break;
                     }
                 }
             } catch (Exception e) {
-                System.out.println("các phần tử của mảng đều giống nhau");
+                System.out.println("Các phần tử của mảng đều giống nhau");
             }
         }
     }
@@ -48,7 +50,6 @@ public class Alo {
         int arr[] = {2, 2, 2, 2, 2};
         int n = arr.length;
         print2largest(arr, n);
-
     }
 }
 

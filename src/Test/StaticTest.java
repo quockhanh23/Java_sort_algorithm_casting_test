@@ -1,16 +1,18 @@
+package Test;
+
 import java.util.ArrayList;
 
-public class C {
+public class StaticTest {
     private String name;
     private int alo;
     private static String address = "ao1";
 
-    public C(String name, int alo) {
+    public StaticTest(String name, int alo) {
         this.name = name;
         this.alo = alo;
     }
 
-    public C() {
+    public StaticTest() {
     }
 
     public String getName() {
@@ -50,13 +52,13 @@ public class C {
     }
 
     static {
-        ArrayList<C> arrayList = new ArrayList<>();
-        arrayList.add(new C("alo1", 1));
-        arrayList.add(new C("alo2", 1));
-        arrayList.add(new C("alo3", 1));
-        arrayList.add(new C("alo4", 1));
-        arrayList.add(new C("alo5", 1));
-        arrayList.add(new C("alo6", 1));
+        ArrayList<StaticTest> arrayList = new ArrayList<>();
+        arrayList.add(new StaticTest("alo1", 1));
+        arrayList.add(new StaticTest("alo2", 1));
+        arrayList.add(new StaticTest("alo3", 1));
+        arrayList.add(new StaticTest("alo4", 1));
+        arrayList.add(new StaticTest("alo5", 1));
+        arrayList.add(new StaticTest("alo6", 1));
         System.out.println(arrayList);
     }
 
@@ -73,10 +75,10 @@ public class C {
     }
 
     public static void main(String[] args) {
-        C alo1 = new C("khanh", 1);
+        StaticTest alo1 = new StaticTest("khanh", 1);
         System.out.println(alo1);
-        C.aloCC();
-        C alo2 = new C("khanh", 1);
+        StaticTest.aloCC();
+        StaticTest alo2 = new StaticTest("khanh", 1);
         System.out.println(alo2);
         System.out.println(address);
     }
