@@ -7,3 +7,6 @@ public class Alo3 implements ITest{
         return null;
     }
 }
+//@Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
+//@Scope("singleton")
+// 2 cách viết
