@@ -1,16 +1,4 @@
 public class G {
-    public void checkYear(int number) {
-        if (number % 400 == 0) {
-            System.out.println("ok");
-        } else if (number % 100 == 0) {
-            System.out.println("không phải là năm nhuận");
-        } else if (number % 4 == 0) {
-            System.out.println("là năm nhuận");
-        } else {
-            System.out.println("không phải là năm nhuận");
-        }
-    }
-
     public void array(String alo) {
         for (int i = 0; i < alo.length(); i++) {
             System.out.println(alo.charAt(i));
@@ -24,9 +12,6 @@ public class G {
 
     public static void main(String[] args) {
         G g = new G();
-        g.checkYear(1996);
-        g.checkYear(1900);
-        g.checkYear(2000);
         String arr = "khánh";
         g.array(arr);
         g.number(1);
@@ -56,13 +41,3 @@ public class G {
 
     }
 }
-// - chia hết cho 4 (1996) -> OK
-//    - ngoại lệ: chia hết cho 100 thì không phải là năm nhuận (1900) -> NG
-//      - ngoại lệ: chia hết cho 400 thì là năm nhuận (2000) -> OK
-
-//Cho 3 bảng:
-//   - Sinh viên (ID, tên)
-//   - Điểm (ID, ID sinh viên, ID môn học, điểm)
-//   - Môn học (ID, tên môn học)
-
-//Lấy ra danh sách sinh viên có tổng số điểm > 100
