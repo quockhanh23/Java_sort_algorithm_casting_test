@@ -55,6 +55,11 @@ public class B extends A {
     }
 
     @Override
+    public String farther4(String name) {
+        return "alo123";
+    }
+
+    @Override
     public String toString() {
         return "B{" +
                 "value=" + value +

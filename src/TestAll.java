@@ -1,6 +1,6 @@
-import java.util.Scanner;
 
-public class Test {
+public class TestAll {
+
     //Tìm max
     public static int findMax(int arr[]) {
         int max = arr[0];
@@ -52,17 +52,47 @@ public class Test {
         }
     }
 
+    // tổng các phần tử trong mảng
+    public void total(int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        System.out.println(sum);
+    }
+    // Sắp xếp mảng giảm dần, đổi dấu thành tăng dần
+    public static void sortDESC(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
+                    int temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        }
+    }
+
+    public static void show(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
 
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 45, 9};
-        System.out.println(Test.findMax(arr));
+        System.out.println(TestAll.findMax(arr));
         String name = "khánh";
-        Test a = new Test();
+        TestAll a = new TestAll();
         a.array(name);
         a.checkYear(1000);
-
         String str = "Hello world";
         System.out.println("Chuỗi là: " + str);
         a.count(str);
+        a.total(arr);
+
+        sortDESC(arr);
+        System.out.println("Dãy số được sắp xếp giảm dần: ");
+        show(arr);
     }
 }

@@ -1,14 +1,11 @@
 package TestInterface;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class TestMap {
     @Override
     public String toString() {
-        return "alo";
+        return super.toString();
     }
 
     //Chỉ cho phép 1 key null và nhiều value null
@@ -21,5 +18,12 @@ public class TestMap {
         alo.put(null, null);
 
         System.out.println(alo);
+        System.out.println(alo.size());
+        Set<String> alo2 = new HashSet<>();
+        alo2.add("1");
+
+        System.out.println(alo2.size());
+        System.out.println(alo2.toString());
+
     }
 }

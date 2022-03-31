@@ -2,7 +2,7 @@ package Test;
 
 import java.util.ArrayList;
 
-public class StaticTest {
+public class StaticTest extends Static {
     private String name;
     private int alo;
     private static String address = "ao1";

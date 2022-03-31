@@ -20,11 +20,16 @@ public class A {
         return "farther class";
     }
 
+
+
     @Override
     public String toString() {
         return "A{" +
                 "nameFather='" + nameFather + '\'' +
                 '}';
+    }
+    public  String farther4(String name) {
+        return "alo123";
     }
 
     public final String farther2(String name) {

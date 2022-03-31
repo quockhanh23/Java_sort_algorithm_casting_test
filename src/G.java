@@ -1,22 +1,20 @@
 public class G {
-    public void array(String alo) {
-        for (int i = 0; i < alo.length(); i++) {
-            System.out.println(alo.charAt(i));
-        }
-    }
 
     public void number(int number) {
         System.out.println(number++);
         System.out.println(++number);
     }
 
+    // == so sánh cả địa chỉ ô nhớ ở đâu(heap hay stack)
+    // equals so sánh giá trị
     public static void main(String[] args) {
-        G g = new G();
-        String arr = "khánh";
-        g.array(arr);
-        g.number(1);
+        int blo1 = 10;
+        int blo2 = 10;
+        System.out.println(blo1 == blo2);
         String alo1 = new String("alo");
         String alo2 = "alo";
+        String alo3 = "alo";
+        System.out.println(alo2 == alo3);
         System.out.println(alo1.equals(alo2));
         System.out.println(alo1 == alo2);
         System.out.println(alo1.compareTo(alo2));

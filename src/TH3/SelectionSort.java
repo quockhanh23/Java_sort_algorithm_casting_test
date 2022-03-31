@@ -1,7 +1,7 @@
 package TH3;
 
 public class SelectionSort {
-
+    // sắp xếp chọn
     public static void selectionSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int minIndex = i;
@@ -15,6 +15,9 @@ public class SelectionSort {
                 array[i] = temp;
             }
         }
+        for (int j : array) {
+            System.out.print(j + "\t");
+        }
     }
 
     public static void insertionSort(int[] array) {
@@ -27,13 +30,15 @@ public class SelectionSort {
             }
             array[j] = value;
         }
+        for (int j : array) {
+            System.out.print(j + "\t");
+        }
     }
 
     public static void main(String[] args) {
-        int[] numbersArr = {5, 6, 1, 9, 8, 7};
-        selectionSort(numbersArr);
-        for (int j : numbersArr) {
-            System.out.print(j + "\t");
-        }
+        int[] array = {5, 6, 1, 9, 8, 7};
+        selectionSort(array);
+        System.out.println("");
+        insertionSort(array);
     }
 }

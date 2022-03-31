@@ -1,8 +1,6 @@
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 
-public class Alo {
+public class Max2 {
     // Tìm phần tử lớn thứ 2
     // cách 1
     public static void print1largest(int arr[], int arr_size) {

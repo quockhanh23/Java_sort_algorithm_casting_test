@@ -5,6 +5,7 @@ public interface ITest {
 
     default void defaultMethod() {
     }
+
     static void staticMethod() {
 
     }

@@ -1,11 +1,10 @@
 package TestInterface;
 
 public abstract class Abstract {
-    public void alo123() {
 
-    }
+    public abstract void speak();
 
-     static String alo() {
+    public static String alo() {
         return "alo123";
     }
 
