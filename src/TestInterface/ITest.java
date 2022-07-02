@@ -1,12 +1,14 @@
 package TestInterface;
 
-public interface ITest {
+  interface ITest {
+
+
     String publicMethod();
 
     default void defaultMethod() {
     }
 
-    static void staticMethod() {
-
+    private String staticMethod() {
+        return null;
     }
 }

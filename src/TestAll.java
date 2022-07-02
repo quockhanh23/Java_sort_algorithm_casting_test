@@ -60,6 +60,7 @@ public class TestAll {
         }
         System.out.println(sum);
     }
+
     // Sắp xếp mảng giảm dần, đổi dấu thành tăng dần
     public static void sortDESC(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
@@ -90,7 +91,6 @@ public class TestAll {
         System.out.println("Chuỗi là: " + str);
         a.count(str);
         a.total(arr);
-
         sortDESC(arr);
         System.out.println("Dãy số được sắp xếp giảm dần: ");
         show(arr);

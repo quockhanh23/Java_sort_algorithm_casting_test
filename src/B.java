@@ -87,5 +87,12 @@ public class B extends A {
         b.farther3();
 
 
+        //chuyển đổi String thành int
+        String s = "100";
+        int i = Integer.parseInt(s);
+        // 10050 vì + là thao tác nối string
+        System.out.println(s + 50);
+        // 150 vì + là thao tác cộng số nguyên
+        System.out.println(i + 50);
     }
 }

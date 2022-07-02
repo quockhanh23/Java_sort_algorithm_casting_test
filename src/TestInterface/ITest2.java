@@ -1,5 +1,7 @@
 package TestInterface;
 
-public interface ITest2 extends ITest {
+@FunctionalInterface
+public interface ITest2 {
+    void testing();
 
 }
