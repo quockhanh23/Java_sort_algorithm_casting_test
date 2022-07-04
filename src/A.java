@@ -1,4 +1,4 @@
-public class A{
+public class A {
     private String nameFather;
 
     public String getNameFather() {
@@ -21,14 +21,14 @@ public class A{
     }
 
 
-
     @Override
     public String toString() {
         return "A{" +
                 "nameFather='" + nameFather + '\'' +
                 '}';
     }
-    public  String farther4(String name) {
+
+    public String farther4(String name) {
         return "alo123";
     }
 
@@ -44,6 +44,7 @@ public class A{
         A a = new A();
         System.out.println(a.nameFather);
     }
+
     public static class Khanh {
 
     }

@@ -2,7 +2,7 @@ package Test;
 
 import java.text.DecimalFormat;
 
-public class StringTest {
+public class StringTestLamTronSoThapPhan {
     public static void doubleCheck() {
         //Lớp DecimalFormat có các tùy chọn định dạng khác nhau
         // để làm tròn số thập phân dựa trên định dạng đã khởi tạo
@@ -38,6 +38,6 @@ public class StringTest {
         String s = "JavaRunSystem";
         StringBuffer sb = new StringBuffer("JavaRunSystem");
         System.out.print(sb.equals(s) + "," + s.equals(sb));
-        StringTest.doubleCheck();
+        StringTestLamTronSoThapPhan.doubleCheck();
     }
 }

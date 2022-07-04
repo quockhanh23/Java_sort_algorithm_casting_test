@@ -1,24 +1,24 @@
 import java.util.ArrayList;
 
-public class B extends A {
+public class EpKieu extends A {
     private int value;
     private String name;
     private String address;
 
-    public B(String nameFather, int value, String name, String address) {
+    public EpKieu(String nameFather, int value, String name, String address) {
         super(nameFather);
         this.value = value;
         this.name = name;
         this.address = address;
     }
 
-    public B(int value, String name, String address) {
+    public EpKieu(int value, String name, String address) {
         this.value = value;
         this.name = name;
         this.address = address;
     }
 
-    public B() {
+    public EpKieu() {
     }
 
     public int getValue() {
@@ -69,29 +69,31 @@ public class B extends A {
     }
 
     public static void main(String[] args) {
-        ArrayList<B> list = new ArrayList<>();
-        B alo2 = new B(1, "khánh", "Lnog biên");
+        ArrayList<EpKieu> list = new ArrayList<>();
+        EpKieu alo2 = new EpKieu(1, "khánh", "Lnog biên");
         list.add(alo2);
 
         // Ép kiểu từ cha xuống con chỉ dùng được phương thức của lớp cha
-        A kaka = new B();
+        A kaka = new EpKieu();
         System.out.println(kaka.farther1());
         Object ob = new A();
         System.out.println(ob);
+
         // Lấy đối tượng của cha ép lên con thì mới dùng được phương thức của lớp con
-        B koo = (B) kaka;
+        EpKieu koo = (EpKieu) kaka;
         System.out.println(koo.children());
         kaka.farther3();
 
-        B b = new B();
-        b.farther3();
-
+        EpKieu epKieu = new EpKieu();
+        epKieu.farther3();
 
         //chuyển đổi String thành int
         String s = "100";
         int i = Integer.parseInt(s);
+
         // 10050 vì + là thao tác nối string
         System.out.println(s + 50);
+
         // 150 vì + là thao tác cộng số nguyên
         System.out.println(i + 50);
     }

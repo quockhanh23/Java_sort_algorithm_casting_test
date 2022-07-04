@@ -65,7 +65,7 @@ public class E {
 
         for (int i = 0; i < a1.length(); i++) {
             System.out.println(a1.charAt(i));
-            System.out.println( a1.toCharArray());
+            System.out.println(a1.toCharArray());
         }
         System.out.println(av.concat(a1));
         String arr[] = {"a2", "a3"};
