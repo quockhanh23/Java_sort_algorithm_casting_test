@@ -52,7 +52,7 @@ public class TestAll {
         }
     }
 
-    // tổng các phần tử trong mảng
+    // Tổng các phần tử trong mảng
     public void total(int[] arr) {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {

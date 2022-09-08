@@ -80,21 +80,21 @@ public class Bai2 {
         if (S.length() < 2 || S.indexOf('H') == -1 || S.indexOf('-') == -1)
             return -1;
         StringBuilder b = new StringBuilder(S);
-        int l = b.length();
+        int length = b.length();
         if (b.charAt(0) == 'H') {
             if (b.charAt(1) == 'H')
                 return -1;
             else
                 b = b.replace(1, 2, "T");
         }
-        if (b.charAt(l - 1) == 'H') {
-            if (b.charAt(l - 2) == 'H')
+        if (b.charAt(length - 1) == 'H') {
+            if (b.charAt(length - 2) == 'H')
                 return -1;
             else
-                b = b.replace(l - 2, l - 1, "T");
+                b = b.replace(length - 2, length - 1, "T");
         }
 
-        for (int i = 1; i < l - 1; i++) {
+        for (int i = 1; i < length - 1; i++) {
             if (b.charAt(i) == 'H') {
                 if (b.charAt(i - 1) == 'H' && b.charAt(i + 1) == 'H')
                     return -1;

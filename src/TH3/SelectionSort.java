@@ -1,7 +1,7 @@
 package TH3;
 
 public class SelectionSort {
-    // sắp xếp chọn
+    // Sắp xếp chọn
     public static void selectionSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int minIndex = i;

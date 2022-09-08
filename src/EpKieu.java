@@ -87,7 +87,7 @@ public class EpKieu extends A {
         EpKieu epKieu = new EpKieu();
         epKieu.farther3();
 
-        //chuyển đổi String thành int
+        // Chuyển đổi String thành int
         String s = "100";
         int i = Integer.parseInt(s);
 

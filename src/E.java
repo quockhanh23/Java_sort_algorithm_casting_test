@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class E {
     static String alo1;
     int alo3;

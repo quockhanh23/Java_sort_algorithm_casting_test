@@ -33,8 +33,8 @@ public class Equals {
         System.out.println(a == c);
         System.out.println(a.equals(c));
         System.out.println("-------------------------------------");
-        //tất cả integer có giá trị từ -128 đến 127 sẽ được lưu vào bộ nhớ cache của lớp Integer
-        // cùng trỏ đến 1 đối tượng
+        // Tất cả integer có giá trị từ -128 đến 127 sẽ được lưu vào bộ nhớ cache của lớp Integer
+        // Cùng trỏ đến 1 đối tượng
         System.out.println("k = h?");
         Integer k = 500;
         Integer h = 500;

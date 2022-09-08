@@ -43,7 +43,7 @@ public class Bai1 {
         }
         return max;
     }
-
+ 
     public static void main(String[] args) {
         int arr[] = {1, 2, 5, 6, 8, 1};
         System.out.println(Bai1.solution(arr));

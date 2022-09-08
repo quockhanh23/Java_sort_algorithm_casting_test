@@ -1,6 +1,6 @@
 public class Swap {
 
-    // hoán đổi giá trị không cần thêm biến
+    // Hoán đổi giá trị không cần thêm biến
     public static void swap1(int a, int b) {
         System.out.println("a: " + a + ", b: " + b);
         a = a * b;
@@ -8,7 +8,7 @@ public class Swap {
         a = a / b;
         System.out.println("a: " + a + ", b: " + b);
     }
-    // hoán đổi giá trị không cần thêm biến
+    // Hoán đổi giá trị không cần thêm biến
     public static void swap2(int a, int b) {
         System.out.println("a: " + a + ", b: " + b);
         a = a + b;

@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Max2 {
     // Tìm phần tử lớn thứ 2
-    // cách 1
+    // Cách 1
     public static void print1largest(int arr[], int arr_size) {
         int first, second;
         if (arr_size < 2) {
@@ -25,7 +25,7 @@ public class Max2 {
             System.out.print("Phần tử lớn thứ 2: " + second);
     }
 
-    // cách 2 sắp xếp trước đã kiểm tra tất cả các trường hợp
+    // Cách 2 sắp xếp trước đã kiểm tra tất cả các trường hợp
     public static void print2largest(int arr[], int arr_size) {
         if (arr_size < 2) {
             System.out.print("Mảng chỉ có 1 phần tử");
