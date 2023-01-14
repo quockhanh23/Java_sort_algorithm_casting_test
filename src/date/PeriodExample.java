@@ -25,7 +25,6 @@ public class PeriodExample {
     public static void main(String[] args) {
         PeriodExample.oldDateToLocalTime();
         PeriodExample.oldDateToLocalTimeSecondOption();
-
     }
 }
 

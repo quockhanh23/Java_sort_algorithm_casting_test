@@ -1,4 +1,4 @@
-package Test;
+package static_test;
 
 public class Static {
     private static String test = "1234";

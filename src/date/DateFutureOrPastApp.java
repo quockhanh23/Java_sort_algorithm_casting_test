@@ -28,6 +28,7 @@ public class DateFutureOrPastApp {
         }
     }
 
+    // Kiểm tra xem đối tượng thời gian là hiện tại hay quá khứ (so sánh với thời gian hiện tại)
     public static String checkDate(final String date, final String datePattern) throws DateTimeParseException {
         String dateFormat = date.replaceAll("/", "-");
         LocalDate localDate = LocalDate.now(ZoneId.systemDefault());

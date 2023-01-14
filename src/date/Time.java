@@ -5,7 +5,7 @@ import java.time.Duration;
 import java.time.Instant;
 
 public class Time {
-
+    // so sánh giữa 2 đối tượng thời gian xem khoảng cách là bao nhiêu ngày
     public static void main(String[] args) throws ParseException {
         Instant start = Instant.now();
         Instant end = Instant.now();

@@ -1,4 +1,6 @@
-public class Static {
+package static_test;
+
+public class Static2 {
     static String alo1;
     int alo3;
     float alo4;
@@ -45,10 +47,10 @@ public class Static {
     }
 
     public static void main(String[] args) {
-        Static a = new Static();
+        Static2 a = new Static2();
         a.nonStatic();
         a.methodStatic();
-        Static b = new Static();
+        Static2 b = new Static2();
         System.out.println("value" + b.value + b.value);
         System.out.println("value" + b.value);
         System.out.println("b = " + b.alo3);
