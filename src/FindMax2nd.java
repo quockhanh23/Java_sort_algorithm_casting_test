@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Max2 {
+public class FindMax2nd {
     // Tìm phần tử lớn thứ 2
     // Cách 1
     public static void print1largest(int arr[], int arr_size) {

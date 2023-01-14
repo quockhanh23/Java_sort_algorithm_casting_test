@@ -4,7 +4,6 @@ package TestInterface;
 // còn đối với phương thức public thì bắt buộc triển khai
 public class InterFaceTest implements ITest {
 
-
     @Override
     public String publicMethod() {
 

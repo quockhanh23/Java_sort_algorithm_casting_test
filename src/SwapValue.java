@@ -1,4 +1,4 @@
-public class Swap {
+public class SwapValue {
 
     // Hoán đổi giá trị không cần thêm biến
     public static void swap1(int a, int b) {
@@ -19,7 +19,7 @@ public class Swap {
 
     public static void main(String[] args) {
         int a = 10, b = 5;
-        Swap.swap1(a, b);
-        Swap.swap2(a, b);
+        SwapValue.swap1(a, b);
+        SwapValue.swap2(a, b);
     }
 }

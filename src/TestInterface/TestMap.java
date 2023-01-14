@@ -11,7 +11,7 @@ public class TestMap {
         return super.toString();
     }
 
-    //Chỉ cho phép 1 key null và nhiều value null
+    //Chỉ cho phép 1 key null và được nhiều value null
     public static void main(String[] args) {
         TestMap alo3 = new TestMap();
         Map<String, TestMap> alo = new HashMap<>();
@@ -27,6 +27,5 @@ public class TestMap {
 
         System.out.println(alo2.size());
         System.out.println(alo2.toString());
-
     }
 }
