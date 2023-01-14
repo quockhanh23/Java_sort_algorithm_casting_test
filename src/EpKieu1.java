@@ -1,11 +1,11 @@
-public class A {
+public class EpKieu1 {
     private String nameFather;
 
     public String getNameFather() {
         return nameFather;
     }
 
-    public A(String nameFather) {
+    public EpKieu1(String nameFather) {
         this.nameFather = nameFather;
     }
 
@@ -13,7 +13,7 @@ public class A {
         this.nameFather = nameFather;
     }
 
-    public A() {
+    public EpKieu1() {
     }
 
     public String farther1() {
@@ -41,8 +41,8 @@ public class A {
     }
 
     public static void main(String[] args) {
-        A a = new A();
-        System.out.println(a.nameFather);
+        EpKieu1 epKieu1 = new EpKieu1();
+        System.out.println(epKieu1.nameFather);
     }
 
     public static class Khanh {

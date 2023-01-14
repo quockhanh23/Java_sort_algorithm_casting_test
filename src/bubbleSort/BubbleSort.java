@@ -1,4 +1,4 @@
-package TH1;
+package bubbleSort;
 
 public class BubbleSort {
 

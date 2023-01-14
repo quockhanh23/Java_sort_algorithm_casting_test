@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class EpKieu extends A {
+public class EpKieu extends EpKieu1 {
     private int value;
     private String name;
     private String address;
@@ -74,9 +74,9 @@ public class EpKieu extends A {
         list.add(alo2);
 
         // Ép kiểu từ cha xuống con chỉ dùng được phương thức của lớp cha
-        A kaka = new EpKieu();
+        EpKieu1 kaka = new EpKieu();
         System.out.println(kaka.farther1());
-        Object ob = new A();
+        Object ob = new EpKieu1();
         System.out.println(ob);
 
         // Lấy đối tượng của cha ép lên con thì mới dùng được phương thức của lớp con

@@ -12,7 +12,6 @@ public class PeriodExample {
         LocalTime localTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault()).toLocalTime();
         System.out.println(now);
         System.out.println(localTime);
-
     }
 
     public static void oldDateToLocalTimeSecondOption() {
@@ -21,11 +20,9 @@ public class PeriodExample {
         LocalTime localTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault()).toLocalTime();
         System.out.println(now);
         System.out.println(localTime);
-
     }
 
     public static void main(String[] args) {
-
         PeriodExample.oldDateToLocalTime();
         PeriodExample.oldDateToLocalTimeSecondOption();
 

@@ -28,7 +28,7 @@ class Stone extends Goban implements Go {
 }
 
 interface Go {
-    public void go();
+    void go();
 }
 
 

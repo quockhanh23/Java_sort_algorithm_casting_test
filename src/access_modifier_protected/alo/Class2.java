@@ -1,4 +1,4 @@
-package protecte.alo;
+package access_modifier_protected.alo;
 
 public class Class2 {
     protected String name;

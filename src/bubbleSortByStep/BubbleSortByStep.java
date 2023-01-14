@@ -1,4 +1,4 @@
-package TH2;
+package bubbleSortByStep;
 
 import java.util.Scanner;
 

@@ -20,7 +20,7 @@ public class StringTestLamTronSoThapPhan {
 
         Double n = 123.4567;
         System.out.println("Original value: " + n);
-        Double g = (Math.round(n*10.0)/10.0);
+        Double g = (Math.round(n * 10.0) / 10.0);
         System.out.println(g);
 
     }

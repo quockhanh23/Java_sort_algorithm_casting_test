@@ -1,12 +1,12 @@
 package Test;
 
-public class Super1 {
+public class TryCatch {
     private String name;
 
-    public Super1() {
+    public TryCatch() {
     }
 
-    public Super1(String name) {
+    public TryCatch(String name) {
         this.name = name;
     }
 

@@ -13,7 +13,6 @@ public class PassByValue {
         System.out.println(number);
     }
 
-
     public static void main(String[] args) {
 
         PassByValue passByValue = new PassByValue();

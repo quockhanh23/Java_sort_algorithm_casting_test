@@ -1,4 +1,4 @@
-public class E {
+public class Static {
     static String alo1;
     int alo3;
     float alo4;
@@ -45,10 +45,10 @@ public class E {
     }
 
     public static void main(String[] args) {
-        E a = new E();
+        Static a = new Static();
         a.nonStatic();
         a.methodStatic();
-        E b = new E();
+        Static b = new Static();
         System.out.println("value" + b.value + b.value);
         System.out.println("value" + b.value);
         System.out.println("b = " + b.alo3);

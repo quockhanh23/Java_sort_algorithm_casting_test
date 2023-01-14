@@ -1,6 +1,6 @@
 package Test;
 
-public class Super2  extends Super1{
+public class Super2  extends TryCatch {
     void message() {
         System.out.println("welcome to java");
     }

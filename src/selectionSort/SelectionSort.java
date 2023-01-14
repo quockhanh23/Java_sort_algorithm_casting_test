@@ -1,4 +1,4 @@
-package TH3;
+package selectionSort;
 
 public class SelectionSort {
     // Sắp xếp chọn

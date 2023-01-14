@@ -1,6 +1,6 @@
 package Test;
 
-public  class Final {
+public class Final {
     private String name;
 
     public final String alo() {
@@ -13,7 +13,8 @@ public  class Final {
 
     public Final() {
     }
-    public void sound(){
+
+    public void sound() {
         System.out.println("alo124");
     }
 }
