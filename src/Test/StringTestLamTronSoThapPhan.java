@@ -22,7 +22,6 @@ public class StringTestLamTronSoThapPhan {
         System.out.println("Original value: " + n);
         Double g = (Math.round(n * 10.0) / 10.0);
         System.out.println(g);
-
     }
 
     public static void main(String[] args) {
