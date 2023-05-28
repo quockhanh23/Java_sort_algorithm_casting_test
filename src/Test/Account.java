@@ -14,9 +14,6 @@ public class Account {
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
-                ", age='" + age + '\'' +
-                ", number='" + number + '\'' +
-                ", email='" + email + '\'' +
                 '}';
     }
 

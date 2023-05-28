@@ -40,6 +40,9 @@ public class Equals {
         Integer h = 500;
         System.out.println(k == h);
         System.out.println(k.equals(h));
-
+        Integer g = 1;
+        Integer y = 1;
+        System.out.println(g == y);
+        System.out.println(g.equals(y));
     }
 }

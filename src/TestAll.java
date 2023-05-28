@@ -2,7 +2,7 @@
 public class TestAll {
 
     //Tìm max
-    public static int findMax(int arr[]) {
+    public static int findMax(int[] arr) {
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > max) {
@@ -34,11 +34,11 @@ public class TestAll {
 
     // Số lần xuất hiện của 1 phần tử
     public void count(String str) {
-        int counter[] = new int[200];
+        int[] counter = new int[200];
 
         for (int i = 0; i < str.length(); i++)
             counter[str.charAt(i)]++;
-        char array[] = new char[str.length()];
+        char[] array = new char[str.length()];
         for (int i = 0; i < str.length(); i++) {
             array[i] = str.charAt(i);
             int flag = 0;
@@ -81,7 +81,7 @@ public class TestAll {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 45, 9};
+        int[] arr = {1, 2, 3, 45, 9};
         System.out.println(TestAll.findMax(arr));
         String name = "khánh";
         TestAll a = new TestAll();
