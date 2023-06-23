@@ -1,10 +1,7 @@
-import java.text.DecimalFormat;
-
 public class This {
     private String name;
 
     public This() {
-
     }
 
     // Từ khóa this phải là câu lệnh đầu tiên trong thân hàm tạo

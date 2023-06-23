@@ -1,4 +1,4 @@
-package bubbleSortByStep;
+package bubbleSort;
 
 import java.util.Scanner;
 
@@ -32,7 +32,7 @@ public class BubbleSortByStep {
                     needNextPass = true;
                 }
             }
-            if (needNextPass == false) {
+            if (!needNextPass) {
                 System.out.println("Array may be sorted and next pass not needed");
                 break;
             }
