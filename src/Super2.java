@@ -4,8 +4,8 @@ public class Super2 extends TryCatch {
     }
 
     void display() {
-        message();// gọi phương thức message() của lớp hiện tại
-        super.message();// gọi phương thức message() của lớp cha
+        message();       // gọi phương thức message() của lớp hiện tại
+        super.message(); // gọi phương thức message() của lớp cha
     }
 
     public static void main(String args[]) {

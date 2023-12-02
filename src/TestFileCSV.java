@@ -9,24 +9,6 @@ import java.util.List;
 
 public class TestFileCSV {
 
-    public static void writeAccount(String path, List<Account> list) throws IOException {
-        FileWriter fileWriter = new FileWriter(path);
-        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-        String str = "Username,Password,Name,Age,Number phone,Email";
-        for (Account account : list) {
-            str += "\n";
-            str += account.getUsername() + ",";
-            str += account.getPassword() + ",";
-            str += account.getName() + ",";
-            str += account.getAge() + ",";
-            str += account.getNumber() + ",";
-            str += account.getEmail();
-        }
-        bufferedWriter.write(str);
-        bufferedWriter.close();
-        fileWriter.close();
-    }
-
     public static void main(String[] args) throws IOException {
         Account account1 = new Account("ไม้จัตวา", "ไม้จัตวา", "ไม้จัตวา", "1", "1", "1");
         Account account2 = new Account("1", "1", "1", "1", "1", "1");

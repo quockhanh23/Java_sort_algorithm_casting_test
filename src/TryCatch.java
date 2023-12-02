@@ -1,23 +1,6 @@
 public class TryCatch {
-    private String name;
-
-    public TryCatch() {
-    }
-
-    public TryCatch(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     void message() {
-        System.out.println("welcome");
+        System.out.println("welcome to 1");
     }
 
     // Try có thể lồng nhau
