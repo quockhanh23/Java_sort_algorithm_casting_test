@@ -8,7 +8,7 @@ public class Super2 extends TryCatch {
         super.message(); // gọi phương thức message() của lớp cha
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Super2 s = new Super2();
         s.display();
     }

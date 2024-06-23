@@ -67,7 +67,7 @@ public class Bai2 {
 
     public int[] convertStringToArrayZeroOne(String a) {
         String[] split = a.split("");
-        int newArr[] = new int[split.length];
+        int[] newArr = new int[split.length];
         for (int i = 0; i < split.length; i++) {
             newArr[i] = split[i].equalsIgnoreCase("-") ? 0 : 1;
         }
@@ -84,14 +84,16 @@ public class Bai2 {
         if (b.charAt(0) == 'H') {
             if (b.charAt(1) == 'H')
                 return -1;
-            else
-                b = b.replace(1, 2, "T");
+            else {
+                b.replace(1, 2, "T");
+            }
         }
         if (b.charAt(length - 1) == 'H') {
             if (b.charAt(length - 2) == 'H')
                 return -1;
-            else
-                b = b.replace(length - 2, length - 1, "T");
+            else {
+                b.replace(length - 2, length - 1, "T");
+            }
         }
 
         for (int i = 1; i < length - 1; i++) {
@@ -99,10 +101,11 @@ public class Bai2 {
                 if (b.charAt(i - 1) == 'H' && b.charAt(i + 1) == 'H')
                     return -1;
                 if (b.charAt(i - 1) != 'T' && b.charAt(i + 1) != 'T') {
-                    if (b.charAt(i + 1) == '-')
-                        b = b.replace(i + 1, i + 2, "T");
-                    else
-                        b = b.replace(i - 1, i, "T");
+                    if (b.charAt(i + 1) == '-') {
+                        b.replace(i + 1, i + 2, "T");
+                    } else {
+                        b.replace(i - 1, i, "T");
+                    }
                 }
             }
         }

@@ -62,8 +62,8 @@ public class Bai3 {
 
     public static void main(String[] args) {
         int n = 5;
-        int arr1[] = {2, 1, 0, 2};
-        int arr2[] = {0, 2, 1, 2};
+        int[] arr1 = {2, 1, 0, 2};
+        int[] arr2 = {0, 2, 1, 2};
         Bai3.solution(n, arr1, arr2);
     }
 }

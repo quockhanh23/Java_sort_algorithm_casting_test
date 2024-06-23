@@ -1,8 +1,3 @@
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.stream.Stream;
-
 public class TestAll {
 
     //Tìm max

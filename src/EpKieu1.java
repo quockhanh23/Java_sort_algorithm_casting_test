@@ -44,8 +44,4 @@ public class EpKieu1 {
         EpKieu1 epKieu1 = new EpKieu1();
         System.out.println(epKieu1.nameFather);
     }
-
-    public static class Khanh {
-
-    }
 }
