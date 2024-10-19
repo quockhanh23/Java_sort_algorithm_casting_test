@@ -1,5 +1,3 @@
-
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -7,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+// Đọc file log trên local
 public class FilterLogFile {
 
     static String fileName = "D:\\Users\\SGSVCMC9\\Downloads\\liferay.2024-05-28.log";

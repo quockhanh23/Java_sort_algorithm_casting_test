@@ -1,26 +1,31 @@
 package Genneric;
 
+import Genneric.allclass.Grandchildren;
+import Genneric.allclass.Grandchildren1;
+import Genneric.allclass.ParentClass;
+import Genneric.allclass.Subclass;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class ClassMain {
 
     public static void main(String[] args) {
-        UserPrinciple userPrinciple = new UserPrinciple();
+        GenericClass genericClass = new GenericClass();
         List<ClassImpl> listClassImpl = new ArrayList<>();
-        List<Test> listSubclass1 = new ArrayList<>();
-        List<Test1> listSubclass2 = new ArrayList<>();
+        List<Grandchildren> listSubclass1 = new ArrayList<>();
+        List<Grandchildren1> listSubclass2 = new ArrayList<>();
 
         // Class cha
-        List<BigOne> listSuperClass1 = new ArrayList<>();
+        List<Subclass> listSuperClass1 = new ArrayList<>();
 
         // Class cha của cha
-        List<BigOne2> listSuperClass2 = new ArrayList<>();
-        userPrinciple.allImplementClassOfInterface = listClassImpl;
-        userPrinciple.subclass = listSubclass1;
-        userPrinciple.subclass = listSubclass2;
-        userPrinciple.superClass = listSuperClass1;
-        userPrinciple.superClass = listSuperClass2;
+        List<ParentClass> listSuperClass2 = new ArrayList<>();
+        genericClass.allImplementClassOfInterface = listClassImpl;
+        genericClass.subclass = listSubclass1;
+        genericClass.subclass = listSubclass2;
+        genericClass.superClass = listSuperClass1;
+        genericClass.superClass = listSuperClass2;
 
         InterfaceTest2 interfaceTest2 = new InterfaceTest2() {
             @Override
@@ -40,7 +45,7 @@ public class ClassMain {
                 }
         );
 
-        userPrinciple.superInterface = listSubInterface;
-        userPrinciple.allImplementClassOfInterface = listSubInterface;
+        genericClass.superInterface = listSubInterface;
+        genericClass.allImplementClassOfInterface = listSubInterface;
     }
 }
