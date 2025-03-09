@@ -7,7 +7,6 @@ public class MinMaxStreamExample {
     public static void main(String[] args) {
         Integer []numbers = {1, 8, 3, 4, 5, 7, 9, 6};
 
-
         // Find max, min with Collection ====================
         List<Integer> listOfIntegers = Arrays.asList(numbers);
         System.out.println(listOfIntegers);
